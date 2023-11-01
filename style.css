@@ -322,22 +322,22 @@ h1 {
     }
 @media (max-width:440px) {
     body{
-        max-width: 300px;
+        max-width: 440px;
     }
     header{
-        max-width: 300px;
+        max-width: 440px;
     }
     .content {
         min-height: 70px;
-        max-width: 300px;
+        max-width: 440px;
     }
     img {
-        max-width: 300px;
+        max-width: 440px;
     }
     .menu{
         top: 0;
         padding: 20px;
-        max-width: 300px;
+        max-width: 440px;
     }
     .menu label{
         display: initial;
@@ -381,15 +381,15 @@ h1 {
     text-align: center;
     }
     .heroe p{
-        padding: 6px;
+        padding: 17px;
         display: block;
         width: 100%;
         text-align: center;}
     
     .heroe a{
-        margin-left: 40px;
+        
         text-align: center;
-            display: flex;
+            
             width: 70%;
     }
     .maiami{
@@ -400,7 +400,7 @@ h1 {
         gap: 10px;
         display: grid;
         grid-template-columns:repeat(3,1fr);
-        grid-template-rows: 20px 270px 150px 100px;
+        grid-template-rows:30px 370px 200px 200px ;
         grid-template-areas: 
         "item2 item2 item2"
         "item1 item1 item1 "
@@ -462,10 +462,6 @@ h1 {
     }
     .benificios{
         width: 95%;
-    }
-    .footer{
-        
-        width: 100%;
     }
     .footer section{
         display: block;
