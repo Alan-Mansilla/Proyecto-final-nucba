@@ -281,7 +281,7 @@ h1 {
     background-color: #1dd616;
     padding: 15px;
     width: 50%;}
-    
+
     .benificios{
         padding: 20px;
         border-radius: 20px;
@@ -298,6 +298,27 @@ h1 {
     }
     .benificios h4{
         font-size: 25px;
+    }
+    .footer{
+        width: 90%;
+        height: 80%;
+        display: flex;
+        margin: 10px;
+        padding: 10px;
+        
+    }
+    .footer section{
+        display: flex;
+        text-align: left;
+        gap: 5%;
+    }
+
+    .footer section h4{
+        font-size: 19px;
+    }
+    .footer section div{
+        width: 20%;
+        align-items: end;
     }
 @media (max-width:440px) {
     body{
@@ -316,10 +337,6 @@ h1 {
     .menu{
         top: 0;
         padding: 20px;
-        
-    }
-    .container{
-        margin: 0;
         max-width: 300px;
     }
     .menu label{
@@ -340,5 +357,124 @@ h1 {
     }
     #menu:checked ~ .navbar{
         display: initial;
+    }
+    .img{
+        display: none;
+    }
+    #hero{
+        margin-top: 0;
+        padding: 15px;
+        display: block;
+        max-width: 440px;
+    }  
+    .heroe{
+        height: 100%;
+        padding: 10px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .heroe h1{
+        width: 100%;
+    min-width: 0;
+    text-align: center;
+    }
+    .heroe p{
+        padding: 6px;
+        display: block;
+        width: 100%;
+        text-align: center;}
+    
+    .heroe a{
+        margin-left: 40px;
+        text-align: center;
+            display: flex;
+            width: 70%;
+    }
+    .maiami{
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        height: 30%;
+        gap: 10px;
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: 20px 270px 150px 100px;
+        grid-template-areas: 
+        "item2 item2 item2"
+        "item1 item1 item1 "
+        "item3 item3 item3 "
+        "item4 item4 item4 "
+        ;
+
+    }
+    .item1{
+        grid-area: item1;
+        height: 50%;
+    }
+    .item2{
+        grid-area: item2;
+    }
+    .item3{
+        grid-area: item3;
+    }
+    .item4{
+        grid-area: item4;
+    }
+    .maiami img{
+        width: 100%;
+    }
+    .cards{
+        width: 70%;
+        height: 100%;
+        gap: 20px;
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows:repeat(6,1fr);
+        grid-template-areas: 
+        "item7"
+        "item8"
+        "item9"
+        "item10"
+        "item11"
+        "item12";
+        padding: 50px;
+        
+    }
+    .item7{
+        grid-area: item7;
+    }
+    .item8{
+        grid-area: item8;
+    }
+    .item9{
+        grid-area: item9;
+    }
+    .item10{
+        grid-area: item10;
+    }
+    .item11{
+        grid-area: item11;
+    }
+    .item12{
+        grid-area: item12;
+    }
+    .benificios{
+        width: 95%;
+    }
+    .footer{
+        
+        width: 100%;
+    }
+    .footer section{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .footer section div{
+        display: block;
+        text-align: center;
+        width: 100%;
     }
 }
