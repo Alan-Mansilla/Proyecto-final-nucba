@@ -13,55 +13,44 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+header{
+    padding:0 0 ;
+    width: 100%;
 }
-
 .content{
     background-image: linear-gradient(to right, #051937, #002c60, #003f8c, #0053bb, #1267eb); ;
-    min-height: 80px;
-}
-
-.menu {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    right: 0;
+    height: 80px;
+    width: 100%;
+    padding: 0px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
 }
-
-.logo {
-    text-align: center;
-    width: 10%;
-    font-size: 25px;
-    color: aliceblue;
-    text-transform: uppercase;
-    font-weight: bold;
+.content a{
+    color: azure;
+    font-size: 20px;
 }
-
-.menu .navbar ul li{
-    position: relative;
-    float: left;
+.navbar{
+    width: 70%;
+    align-items: center;
+    display: flex;
 }
-
-.menu .navbar ul li a{
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 18px;
-    padding: 20px;
-    color: aliceblue;
-    display: block;
-    font-weight: bold;
-
+.navbar label{
+    display: none;
 }
-
+.navbar ul{
+    align-items: center;
+    gap: 30px;
+    display: flex;
+}
 .menu .navbar ul li a:hover {
     color: aqua;
 }
-
+.navbar li a{
+    color: azure;
+}
 #menu {
     display: none;
 }
@@ -126,7 +115,7 @@ h1 {
 .maiami{
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 100vh;
     height: 100%;
     gap: 10px;
     display: grid;
@@ -334,6 +323,51 @@ h1 {
         width: 20%;
         align-items: end;
     }
+    @media (max-width:992px){
+        header{
+            width: 100%;
+        }
+        .maiami{
+            display: flex;
+            justify-content: center;
+            width: 70%;
+            height: 300%;
+            gap: 10px;
+            display: grid;
+            grid-template-columns: 150px 200px 200px 150px;
+            grid-template-rows: 70px 230px;
+            grid-template-areas:
+"item2 item2 item2 item2"
+"item1 none item3 item3"
+"item1 none item4 item4";
+        }
+        .item1{
+            height: 100%;
+            width: 135%;
+            grid-area: item1;
+        }
+        .item2{
+            width: 100%;
+            grid-area: item2;
+        }
+        .item2 img{
+            width: 100%;
+        }
+        .item3{
+            width: 100%;
+            grid-area: item3;
+        }
+        .item3 img{
+            width: 90%;
+        }
+        .item4 img{
+            width: 90%;
+        }
+        .item4{
+            width: 100%;
+            grid-area: item4;
+        }
+}
     @media (max-width:768px){
         header{
             max-width: 768px;
